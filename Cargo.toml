@@ -1,0 +1,25 @@
+[package]
+name = "discriminant"
+description = "Better `Discriminant` and enum operations"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+keywords = ["macros", "zerocost", "enum", "discriminant", "iterator"]
+categories = ["data-structures", "no-std::no-alloc", "rust-patterns"]
+authors = ["Yasuo Ozu <yasuo@ozu.email>"]
+repository = "https://github.com/yasuo-ozu/discriminant"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+discriminant-macro = { version = "0.1.0", path = "macro" }
+
+[workspace]
+
+members = [
+	".",
+	"macro",
+]
+
+resolver = "2"

@@ -1,0 +1,21 @@
+[package]
+name = "discriminant-macro"
+description = "Better `Discriminant` and enum operations"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Yasuo Ozu <yasuo@ozu.email>"]
+repository = "https://github.com/yasuo-ozu/discriminant"
+
+[lib]
+proc-macro = true
+path = "lib.rs"
+
+[dependencies]
+proc-macro2 = "1.0"
+template-quote = "0.4.0"
+proc-macro-error = "1.0"
+
+[dependencies.syn]
+version = "2.0"
+features = [ "full", "derive", "printing", "extra-traits"]
